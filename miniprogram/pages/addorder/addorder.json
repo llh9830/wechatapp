@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-cell": "/dist/cell/index",
+    "van-cell-group": "/dist/cell-group/index",
+    "van-picker": "/dist/picker/index"
+  },
+  "navigationBarTitleText": "填写订单"
+}

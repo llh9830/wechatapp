@@ -1,0 +1,93 @@
+
+<view class="swiper">
+<swiper indicator-dots="{{indicatorDots}}" indicator-active-color="#ababb7" indicator-color="#fff" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+<block wx:for="{{imgUrls}}" wx:key="index">
+    <swiper-item>
+      <image src="{{item}}" class="img1"></image>
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+<view></view>
+<van-notice-bar backgroundColor='#ecf9ff' color='#267fd9'
+  text="本公司提供小程序预约以及电话咨询服务。营业时间：8：00-12：00、14：00-17：30。"/>
+
+<view class="search-view" style="background:{{ scrollTop === 0 ?'-webkit-linear-gradient(top, rgba(38,127,217, 1), rgba(38,127,217, 0.3))' :( scrollTop<200 ? 'rgba(38,127,217,'+(scrollTop/400+0.3) +')' : 'rgba(38,127,217,1)')  }} ">
+    <view class="search-content">
+      <image src="/images/search-pic.png" class="search-icon" />
+      <input placeholder="请输入搜索内容" class="search-input" maxlength="30" confirm-type="搜索" bindinput='listenerSearchInput' bindconfirm='toSearch'>
+      </input>
+      <button class='search-btn' bindtap="toSearch">搜索
+      </button>
+    </view>
+  </view>
+<view class="icon">
+<text class="size"><text class="gray">——</text>公司业务<text class="gray">——</text></text>
+<view >
+<van-icon name="arrow-down" />
+</view>
+
+
+<view class="imgcon">
+<image bindtap="detail1" src="{{url1}}" class="img"></image>
+<image bindtap="detail2" src="{{url2}}" class="img"></image>
+</view>
+<view class="imgcon">
+<image bindtap="detail3" src="{{url3}}" class="img"></image>
+<image bindtap="detail4" src="{{url4}}" class="img"></image>
+</view>
+<view class="imgcon">
+<image bindtap="detail5" src="{{url5}}" class="img"></image>
+<image bindtap="detail6" src="{{url6}}" class="img"></image>
+</view>
+<view class="imgcon">
+<image bindtap="detail7" src="{{url7}}" class="img"></image>
+<image bindtap="detail8" src="{{url8}}" class="img"></image>
+</view>
+<view class="imgcon">
+<image bindtap="detail9" src="{{url9}}" class="img"></image>
+<image bindtap="detail10" src="{{url10}}" class="img"></image>
+</view>
+<view class="imgcon">
+<image bindtap="detail11" src="{{url11}}" class="img"></image>
+<image bindtap="detail12" src="{{url12}}" class="img"></image>
+</view>
+<view class="imgcon">
+<image bindtap="detail13" src="{{url13}}" class="img"></image>
+<image bindtap="detail14" src="{{url14}}" class="img"></image>
+</view>
+<view class="imgcon">
+<image bindtap="detail15" src="{{url15}}" class="img"></image>
+<image bindtap="detail16" src="{{url16}}" class="img"></image>
+</view>
+</view>
+<view class="introduction">
+<view class="about">
+<text class="size"><text class="gray">——</text>关于我们<text class="gray">——</text></text>
+
+<view>
+<van-icon name="arrow-down" />
+</view>
+<image src="/images/intro.png" class="img2"></image>
+<view class="textintro">{{introduction}}</view>
+
+</view>
+</view>
+<view class='contact'>
+<text class="size"><text class="gray">——</text>联系方式<text class="gray">——</text></text>
+<view class='icon'>
+<van-icon name="arrow-down" />
+</view>
+<view class='contact-item'>
+<van-cell icon="manager-o" title="联系人" value="***" size="large" border="ture" />
+</view>
+<view class='contact-number' bindtap='phonecall1' >
+<van-cell icon="phone-o" title="***电话" value="123456789" size="large" border="ture" is-link/>
+</view>
+<view class='contact-number' bindtap='phonecall2' >
+<van-cell icon="phone-o" title="***电话" value="123456789" size="large" border="ture" is-link/>
+</view>
+<view class='contact-number' bindtap='phonecall3' >
+<van-cell icon="phone-o" title="***电话" value="123456789" size="large" border="ture" is-link/>
+</view>
+</view>

@@ -1,0 +1,68 @@
+<!--pages/order/order.wxml-->
+<view class="container">
+<view class="no-order" hidden="{{orderList ? true:false}}">
+        <image src="/images/order-off.png" class="no-order-img"></image>
+        <view class="text">暂无订单</view>
+    </view>
+<view class="orderlist" hidden="{{orderList ? false:true}}" wx:for="{{name}}" wx:key="index">
+<view class="imgtext">
+<view wx:if="{{item.service=='停车场管理'}}" >
+<image src="/images/sw1.jpg" class="img"></image>
+</view>
+<view wx:if="{{item.service=='物业管理'}}" >
+<image src="/images/sw2.jpg" class="img"></image>
+</view>
+<view wx:if="{{item.service=='洗衣服务'}}" >
+<image src="/images/sw3.jpg" class="img"></image>
+</view>
+<view wx:if="{{item.service=='园林绿化服务'}}" >
+<image src="/images/sw4.jpg" class="img"></image>
+</view>
+<view wx:if="{{item.service=='场地租赁'}}" >
+<image src="/images/sw5.jpg" class="img"></image>
+</view>
+<view wx:if="{{item.service=='清洗消毒服务'}}" >
+<image src="/images/sw6.jpg" class="img"></image>
+</view>
+<view wx:if="{{item.service=='房地产中介服务'}}" >
+<image src="/images/sw7.jpg" class="img"></image>
+</view>
+<view wx:if="{{item.service=='防虫灭鼠服务'}}" >
+<image src="/images/sw8.jpg" class="img"></image>
+</view>
+<view wx:if="{{item.service=='排水系统安装服务'}}" >
+<image src="/images/sw9.jpg" class="img"></image>
+</view>
+<view wx:if="{{item.service=='酒店管理'}}" >
+<image src="/images/sw10.jpg" class="img"></image>
+</view>
+<view wx:if="{{item.service=='建筑工程技术服务'}}" >
+<image src="/images/sw11.jpg" class="img"></image>
+</view>
+<view wx:if="{{item.service=='机械设备清洗服务'}}" >
+<image src="/images/sw12.jpg" class="img"></image>
+</view>
+<view wx:if="{{item.service=='护理服务'}}" >
+<image src="/images/sw13.jpg" class="img"></image>
+</view>
+<view wx:if="{{item.service=='公厕清洁服务'}}"  >
+<image src="/images/sw14.jpg" class="img"></image>
+</view>
+<view wx:if="{{item.service=='工程排水服务'}}"  >
+<image src="/images/sw15.jpg" class="img"></image>
+</view>
+<view wx:if="{{item.service=='劳务派遣外包服务'}}"  >
+<image src="/images/sw16.jpg" class="img"></image>
+</view>
+
+<view class="servicetext" >
+<view>预约服务：{{item.service}}</view>
+<view>下单时间：{{item.time}}</view>
+<view class="color">当前状态：{{item.condition}}</view>
+</view>
+</view>
+
+<view class="delete" id="{{item._id}}" value="{{item.name}}" bindtap="delete">取消订单</view>
+
+</view>
+</view>

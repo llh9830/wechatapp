@@ -1,0 +1,22 @@
+<!--pages/my/my.wxml-->
+<view class="profile">
+  <view class="profile-img">
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <open-data type="userNickName" class="profile-name"></open-data>
+</view>
+<view class="same" bindtap='orderlist'>
+<van-cell icon='orders-o' title="我的订单" size="large" is-link/>
+</view>
+<view class="same" bindtap='contact1'>
+<van-cell icon='phone-o' title="***电话" size="large" value='123456789' is-link/>
+</view>
+<view class="same" bindtap='contact2'>
+<van-cell icon='phone-o' title="***电话" size="large" value='123456789' is-link/>
+</view>
+<view class="same" bindtap='contact3'>
+<van-cell icon='phone-o' title="***电话" size="large" value='123456789' is-link/>
+</view>
+<view class="same">
+<van-cell icon='location-o' title="联系地址" size="large" value='广州市***' url='/pages/map/map' is-link/>
+</view>

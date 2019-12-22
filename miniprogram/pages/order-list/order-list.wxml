@@ -1,0 +1,13 @@
+<!--pages/order-list/order-list.wxml-->
+<view class="container">
+<view class="image">
+<image src='{{imgurl}}' class="img"></image>
+</view>
+<view class="text">
+<image src="{{src}}" class="imgx" ></image>
+</view>
+<view bindtap="addorder">
+<button class='button' >立即预约</button>
+</view>
+</view>
+

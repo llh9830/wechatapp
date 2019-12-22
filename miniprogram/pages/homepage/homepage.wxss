@@ -1,0 +1,133 @@
+page{
+  background-color: #eee;
+  width:100%;
+  overflow-x: hidden;
+}
+.swiper{
+  padding-top: 100rpx;
+  
+}
+.img1{
+  width: 100%;
+  height: 100%;
+}
+.img2{
+  width: 100%;
+  height: 320rpx;
+}
+.search-view{
+  position:fixed;
+  left:0;
+  right:0;
+  top:0;
+  z-index:500;
+  width: 100%;
+  height: 100rpx;
+  background: gray;
+  display: flex;
+  flex-direction: column;
+}
+.search-content{
+   background: white;
+   width:650rpx;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding-top: auto;
+   padding-left: 20rpx;
+   padding-bottom: auto;
+   margin: auto;
+   height: 70rpx;
+   border-radius:5px 5px;
+}
+.search-icon{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+.search-input{
+  width: 500rpx;
+  font-size: 28rpx;
+}
+.search-btn{
+  width: 150rpx;
+  height: 70rpx;
+  margin-right: 0rpx;
+  background-color:blueviolet;
+  font-size: 28rpx;
+  align-items: center;
+  border-top-left-radius: 0rpx;
+  border-bottom-left-radius: 0rpx;
+  color:#fff;
+  border:none;
+  position: relative;
+}
+
+.container {
+  overflow-x: hidden;
+  width: 100%
+}
+
+.type-container{
+  display: flex;
+  flex-direction: row;
+}
+.imgcontainer{
+  display: flex;
+  flex-direction: row;
+}
+.imgcon{
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  
+}
+.size{
+  font-size: 50rpx;
+}
+.img{
+  width: 365rpx;
+  height: 244rpx;
+  border: 5rpx solid #eee;
+  
+}
+.icon{
+  text-align: center;
+  background-color: #fff;
+}
+
+.introduction{
+  width: 100%;
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+
+.contact{
+  width: 100%;
+  height: 200rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+  text-align: center;
+}
+
+
+
+.introduction .about{
+  text-align: center;
+}
+.introduction .textintro{
+  text-align: justify;
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+  font-size: 30rpx;
+  font-family: 'Franklin Gothic Medium'
+}
+.imgshow{
+  height: 183rpx;
+  width: 183rpx;
+  border: 2rpx solid #fff;
+}
+
+.gray{
+  color: rgba(128, 128, 128, 0.479);
+}
